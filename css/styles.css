@@ -5,11 +5,13 @@
     --white-color: #FFFFFF;
     --black-color: #000000;
     --address-color: rgba(255, 255, 255, 0.6);
-    --hero-background: #2F303A;
+    --hero-background: #C4C4C4;
     --third-section-and-portfoliobtn-background: #F5F4FA;
     --footer-background: #2F303A;
     --header-border: #ECECEC; 
     --portfolio-border-list: #EEEEEE;
+    --btn-active: #188CE8;
+    --client-group-color: #AFB1B8;
 }
 
 body {
@@ -17,7 +19,18 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: 0.03em;
+}
 
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 header {
@@ -40,8 +53,13 @@ nav {
     display: flex;
 }
 
+.nav:hover,
+.nav:focus {
+    color: var(--accent);
+}
+
 .item > .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -77,14 +95,29 @@ nav {
     padding: 0;
 }
 
-.nav:hover,
-.nav:focus {
-    color: var(--accent);
-}
+
 
 .contact-item {
     display: flex;
     margin-left: auto;
+}
+
+.envelop {
+    fill: var(--additional-font-color);
+}
+
+.envelop:hover,
+.envelop:focus {
+    fill: var(--accent)
+}
+
+.smartphone {
+    fill: var(--additional-font-color);
+}
+
+.smartphone:hover,
+.smartphone:focus {
+    fill: var(--accent)
 }
 
 .contact {
@@ -94,9 +127,20 @@ nav {
     line-height: 1.17;
 }
 
+.contact:hover,
+.contact:focus {
+    color: var(--accent);
+}
+
 .hero {
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/bcg-hero.jpg');
     background-color: var(--hero-background);
+    background-position: center;
+    background-size: cover;
+
     color: var(--white-color);
+
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -129,6 +173,11 @@ nav {
     border: 0;
 }
 
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--btn-active);
+}
+
 .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -147,6 +196,22 @@ nav {
     line-height: 1.71;
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+.feature-icon {
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--third-section-and-portfoliobtn-background);
+
+    margin-bottom: 30px;
+}
+
+.features-svg {
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-bottom: 25px;
+    padding-right: 100px;
 }
 
 .features-list {
@@ -213,11 +278,79 @@ nav {
     margin-bottom: 0;
 }
 
+.team-icon-list {
+    display: flex;
+    margin-top: 16px;
+    margin-left: 32px;
+}
+
+.team-icon {
+    width: 44px;
+    height: 44px;
+
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.team-icon:hover,
+.team-icon:focus {
+    background-color: var(--accent);
+}
+
+.icon-svg {
+    fill: var(--client-group-color);
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+}
+
+.icon-svg:hover,
+.icon-svg:focus {
+    fill: var(--white-color);
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.client-group {
+    fill: var(--client-group-color);
+
+    border: 1px solid var(--client-group-color);
+    border-radius: 4px;
+
+    width: 170px;
+    height: 92px;
+
+    margin: 0 auto;
+}
+
+.client-group:hover,
+.client-group:focus {
+    fill: var(--accent);
+}
+
+.client-item {
+
+}
+
 footer {
     background-color: var(--footer-background);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.bottom {
+    display: flex;
+}
+
 footer .logo {
     display: block;
     margin-bottom: 20px;
@@ -254,6 +387,49 @@ footer .logo {
 
 .address-item:nth-last-child(1) {
     margin-bottom: 0;
+}
+
+.socials {
+    margin-left: 70px;
+}
+
+.connect-title {
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.connect-icon-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.connect-icon {
+    width: 44px;
+    height: 44px;
+
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.connect-icon:hover,
+.connect-icon:focus {
+    background-color: var(--accent);
+}
+
+.connect-svg {
+    fill: var(--white-color);
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+}
+
+.connect-svg:hover,
+.connect-svg:focus {
+    fill: var(--white-color);
 }
 
 .second-page {
@@ -324,16 +500,4 @@ footer .logo {
     border-right: 1px solid var(--portfolio-border-list);
     border-bottom: 1px solid var(--portfolio-border-list);
     border-left: 1px solid var(--portfolio-border-list);
-}
-
-img {
-    display: block;
-}
-
-.container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
