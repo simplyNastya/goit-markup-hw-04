@@ -198,22 +198,6 @@ nav {
     margin-bottom: 0;
 }
 
-.feature-icon {
-    width: 270px;
-    height: 120px;
-
-    background-color: var(--third-section-and-portfoliobtn-background);
-
-    margin-bottom: 30px;
-}
-
-.features-svg {
-    padding-top: 25px;
-    padding-left: 100px;
-    padding-bottom: 25px;
-    padding-right: 100px;
-}
-
 .features-list {
     display: flex;
     gap: 30px;
@@ -221,6 +205,20 @@ nav {
 
 .features {
     width: 270px;
+}
+
+.feature-icon {
+    width: 270px;
+    height: 120px;
+
+    background-color: var(--third-section-and-portfoliobtn-background);
+
+    margin-bottom: 30px;
+
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-bottom: 25px;
+    padding-right: 100px;
 }
 
 .works {
@@ -278,10 +276,11 @@ nav {
     margin-bottom: 0;
 }
 
-.team-icon-list {
+.team-social-icon-list {
     display: flex;
+    justify-content: center;
+
     margin-top: 16px;
-    margin-left: 32px;
 }
 
 .team-icon {
@@ -404,9 +403,10 @@ footer .logo {
 .connect-icon-list {
     display: flex;
     margin-top: 20px;
+    gap: 10px;
 }
 
-.connect-icon {
+.socials-footer {
     width: 44px;
     height: 44px;
 
@@ -414,17 +414,15 @@ footer .logo {
     border-radius: 50%;
 }
 
-.connect-icon:hover,
-.connect-icon:focus {
+.socials-footer:hover,
+.socials-footer:focus {
     background-color: var(--accent);
 }
 
 .connect-svg {
     fill: var(--white-color);
-    padding-top: 12px;
-    padding-left: 12px;
-    padding-bottom: 12px;
-    padding-right: 12px;
+   
+    padding: 12px
 }
 
 .connect-svg:hover,
