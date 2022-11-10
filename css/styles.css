@@ -66,6 +66,8 @@ nav {
 
 .item > .link {
     display: flex;
+    align-items: center;
+
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -108,20 +110,12 @@ nav {
 
 .envelop {
     fill: var(--additional-font-color);
-}
-
-.envelop:hover,
-.envelop:focus {
-    fill: var(--accent)
+    margin-right: 10px;
 }
 
 .smartphone {
     fill: var(--additional-font-color);
-}
-
-.smartphone:hover,
-.smartphone:focus {
-    fill: var(--accent)
+    margin-right: 10px;
 }
 
 header::after {
@@ -141,6 +135,16 @@ header::after {
 .contact:hover,
 .contact:focus {
     color: var(--accent);
+}
+
+.contact:hover .envelop,
+.contact:focus .envelop {
+    fill: var(--accent);
+}
+
+.contact:hover .smartphone,
+.contact:focus .smartphone {
+    fill: var(--accent);
 }
 
 .hero {
