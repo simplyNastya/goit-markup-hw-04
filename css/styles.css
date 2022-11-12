@@ -222,9 +222,7 @@ nav {
     width: 70px;
     height: 70px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
 }
 
 .features-title {
@@ -531,6 +529,10 @@ footer .logo {
 
 .filtr-list:first-child {
     padding: 6px 25px;
+}
+
+.example-hover {
+    display: block;
 }
 
 .example-hover:hover,
